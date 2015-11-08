@@ -58,19 +58,17 @@
       });
     </script>
     <script>
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	  console.log('test')
-	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	  	var target = $(this.hash);
-	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	    if (target.length) {
-	    	$('html,body').animate({scrollTop: target.offset().top}, 1000);
-	    return false;
-	    }
-	  	}
-	  	});
-		});
+	$('nav a').on('click', function() {
+
+    	var scrollAnchor = $(this).attr('data-scroll'),
+        	scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top;
+
+    	$('body,html').animate({scrollTop: scrollPoint}, 500);
+
+    	return false;
+
+})
+
     </script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -83,10 +81,10 @@
   <body>
     <div data-magellan-expedition="fixed" class="navbar">
       <dl class="sub-nav">
-          <span class="navlink"><a href="#about">About</a></span>
-          <span class="navlink"><a href="#projects">Projects</a></span>
-          <span class="navlink"><a href="#undefined">What I Code</a></span>
-          <span class="navlink"><a href="#undefined">Scratch</a></span>
+          <span class="navlink"><a href="#" data-scroll="about">About</a></span>
+          <span class="navlink"><a href="#" data-scroll="projects">Projects</a></span>
+          <span class="navlink"><a href="#" data-scroll="code">What I Code</a></span>
+          <span class="navlink"><a href="#" data-scroll="scratch">Scratch</a></span>
       </dl>
     </div>
 <div class="main-container">
