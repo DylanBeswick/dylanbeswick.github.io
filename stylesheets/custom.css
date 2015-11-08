@@ -1,9 +1,3 @@
-.wrapper {
-  max-width: 650px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 20px;
-}
 body {
   padding: 0px 0 20px 0px;
   margin: 0px;
@@ -94,7 +88,7 @@ a small {
   z-index: 9999;
   width: 100%;
   height: 50px;
-  background: rgba(70, 70, 255, 0.9);
+  background: rgba(255, 70, 70, 0.9);
 }
 .slide{
 	border-bottom: 2px solid rgba(255,255,255,1);
@@ -120,7 +114,7 @@ a small {
 	line-height: 25px;
 }
 
-p{
+p {
 	color: rgba(255,255,255,1);
 }
 h1{
