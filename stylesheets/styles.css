@@ -9,6 +9,7 @@
     width: -moz-fit-content;
     width: fit-content;
     padding-top: 12px;
+    text-size: 14px;
 }
 .sub-nav .nav a, .sub-nav .nav a:visited, .sub-nav .nav a:active {
     color: #333;
