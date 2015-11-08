@@ -41,6 +41,7 @@
 .container-wrap{
 	display: table-cell;
 	vertical-align: middle;
+	margin:0 auto;
 }
 .playground{
 	height: 100px;
