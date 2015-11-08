@@ -44,7 +44,7 @@
 .navbar.fixed {
     background: rgba(255, 255, 255, 0.9);
 }
-.navbar:not(.fixed) a, .magellan-nav:not(.fixed) a:visited {
+.navbar:not(.fixed) a, .navbar:not(.fixed) a:visited {
     color:aliceblue;
 } 
 @font-face {
