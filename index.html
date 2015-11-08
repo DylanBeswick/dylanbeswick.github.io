@@ -6,8 +6,57 @@
     <title>Dylan5797</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="javascripts/respond.js"></script>
+    <script>
+      $(document).ready(function(){  
+      var wHeight = $(window).innerHeight();
+      var siblings = $('.slide').siblings();
+      var perset = {};
+      var sumHeight = 0;
+      for(var i = 0; i<siblings.length; i++) {
+        if(siblings[i].dataset.background){
+          perset[sumHeight] =  siblings[i].dataset.background;
+        }
+        else
+          perset[sumHeight] =  0;
+      
+        sumHeight= sumHeight + siblings[i].clientHeight;
+      }
+      processScroll();
+      
+      function lessThan(nums, key){
+        if(nums == null || nums.length == 0 || key ==0 ) 
+          return 0;
+        low = 0;
+        high = nums.length -1;
+        while(low <= high){
+            mid = parseInt((low + high) >> 1);
+            if(key <= nums[mid]){
+                high = mid - 1;
+            }else {
+                low = mid +1;
+            }
+        }
+        return high;
+      }
+    
+      var scroll_pos = 0;
+    
+      function processScroll() { 
+        scroll_pos = $(this).scrollTop();
+    
+        var presetHeights = Object.keys(perset);
+        var x = lessThan(presetHeights,scroll_pos);
+        var bgColor = perset[presetHeights[x]];
+        if(bgColor) {
+          $("body").css('background-color',bgColor);
+        }
+      }
+    
+      $(document).scroll(processScroll);
+      });
+    </script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -37,6 +86,67 @@
         </div>
 
         <h3>
+<div class="main-container" id="wide">
+<div id="top"></div>  	<!-- used to bring users to top -->
+<header id="main-header">
+	<div class="content-inner">
+		<div class="inner-container">
+			<div class="row">
+				<div class="column-small-11 center">
+					<div class="row">
+						<div class="column-xsmall-2 center-xsmall padd0 logo">
+						</div>
+						<div class="column-xsmall-10 align-right center-xsmall padd0">
+							<a href="http://techstream.org/Web-Development/Javascript/Change-Page-Background-on-Scroll" class="button">Back To article</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end of class="inner-container" -->
+	</div><!-- end of class="content-inner" -->
+</header><!-- end if id="main-header" -->
+<div id="Container">
+	<div class="slide slide1" data-background="rgba(22, 160, 133,1.0)">
+		<div class="main-container">
+			<div class="container-wrap">
+				<div class="playground">
+					<h1>Dylan5797</h1>
+					<p>Hello, I'm Dylan5797</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="slide slide2" data-background="rgba(211, 84, 0,1.0)">
+		<div class="main-container">
+			<div class="container-wrap">
+				<div class="playground">
+					<h1>You just scrolled down to Slide 2</h1>
+					<p>I have filled your screen with Pumpkin Organge.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slide slide3" data-background="rgba(41, 128, 185,1.0)">
+		<div class="main-container">
+			<div class="container-wrap">
+				<div class="playground">
+					<h1>You are awsome :)</h1>
+					<p>You are looking at the great Sky.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slide slide3" data-background="rgba(192, 57, 43,1.0)">
+		<div class="main-container">
+			<div class="container-wrap">
+				<div class="playground">
+					<h1>That is all folks ....!</h1>
+					<p>This marks the End of this amazing color show.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <a id="dylan5797" class="anchor" href="#dylan5797" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dylan5797</h3>
 
 <h2>
