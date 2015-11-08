@@ -1,8 +1,9 @@
 .navlink {
 	padding: 5px;
-	margin: 5px 5px 5px 5px;
+	margin: 10px 10px 10px 10px;
 	text-align: center;
 	font-family: 'Lato', serif;
+	text-size: 16px;
 }
 .sub-nav {
     margin: 0 auto !important;
@@ -10,7 +11,6 @@
     width: -moz-fit-content;
     width: fit-content;
     padding-top: 12px;
-    text-size: 14px;
 }
 .sub-nav .nav a, .sub-nav .nav a:visited, .sub-nav .nav a:active {
     color: #333;
