@@ -58,16 +58,17 @@
       });
     </script>
     <script>
-	$('sub-nav a').on('click', function() {
+			$('sub-nav a').on('click', function() {
 
-    	var scrollAnchor = $(this).attr('data-scroll'),
-        	scrollPoint = $('#' + scrollAnchor).offset().top;
+    	var scrollAnchor = $(this).attr('data-scroll');
+    	console.log(scrollAnchor)
+    	var scrollPoint = $('#' + scrollAnchor).offset().top;
 
     	$('body,html').animate({scrollTop: scrollPoint}, 500);
 
     	return false;
 
-})
+			})
 
     </script>
     <!--[if lt IE 9]>
