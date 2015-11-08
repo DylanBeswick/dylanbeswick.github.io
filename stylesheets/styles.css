@@ -12,10 +12,6 @@
     position: relative;
     background: none !important;
 }
-.nav {
-margin-bottom: 0;
-display:block;
-}
 .navbar {
   position: fixed;
   top: 0;
