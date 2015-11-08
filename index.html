@@ -58,14 +58,14 @@
 	        	try {
 	        		$('body').removeAttr('background-color');
 	        	}
-	        	catch(e) {}
+	        	catch(e) {console.log('err');}
 	        	$("body").css('background-image', "url(" + bgColor + ")");
         	}
         	else {
   	        	try {
 	        			$('body').removeAttr('background-color');
 		        	}
-		        	catch(e) {}
+		        	catch(e) {console.log('err');}
 		        	$("body").css('background-color',bgColor);      		
 					}
         }
