@@ -22,8 +22,7 @@
       for(var i = 0; i<siblings.length; i++) {
         if(siblings[i].dataset.background){
           perset[sumHeight] =  siblings[i].dataset.background;
-        }
-        else {
+        } else {
           perset[sumHeight] =  0;
         }
         sumHeight= sumHeight + siblings[i].clientHeight;
@@ -55,7 +54,20 @@
         var x = lessThan(presetHeights,scroll_pos);
         var bgColor = perset[presetHeights[x]];
         if(bgColor) {
-          $("body").css('background-color',bgColor);
+        	if (bgColor.substring(0, 4) == "http") {
+	        	try {
+	        		$('body').removeAttr('background-color');
+	        	}
+	        	catch(e) {}
+	        	$("body").css('background-image',bgColor);
+        	}
+        	else {
+  	        	try {
+	        			$('body').removeAttr('background-color');
+		        	}
+		        	catch(e) {}
+		        	$("body").css('background-color',bgColor);      		
+					}
         }
       }
     
