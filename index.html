@@ -61,7 +61,7 @@
 	$('sub-nav a').on('click', function() {
 
     	var scrollAnchor = $(this).attr('data-scroll'),
-        	scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top;
+        	scrollPoint = $('#' + scrollAnchor).offset().top;
 
     	$('body,html').animate({scrollTop: scrollPoint}, 500);
 
