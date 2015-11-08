@@ -56,14 +56,14 @@
         if(bgColor) {
         	if (bgColor.substring(0, 4) == "http") {
 	        	try {
-	        		$('body').removeAttr('background-color');
+	        		$('body').css('background-color', '');
 	        	}
 	        	catch(e) {console.log('err');}
 	        	$("body").css('background-image', "url(" + bgColor + ")");
         	}
         	else {
   	        	try {
-	        			$('body').removeAttr('background-image');
+	        			$('body').css('background-image', '');
 		        	}
 		        	catch(e) {console.log('err');}
 		        	$("body").css('background-color',bgColor);      		
