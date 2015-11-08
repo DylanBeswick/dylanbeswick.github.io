@@ -91,6 +91,50 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.slide{
+	border-bottom: 2px solid rgba(255,255,255,1);
+}
+
+.slide1{
+  height: 700px;
+}
+
+.slide2{
+  height: 1000px;
+}
+
+.slide3{
+  height: 700px;
+}
+
+.slide4{
+	height: 400px;
+}
+
+.main-container{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.container-wrap{
+	display: table-cell;
+	vertical-align: middle;
+}
+.playground{
+	height: 100px;
+	line-height: 100px;
+	margin: 0 auto;
+	text-align: center;
+	width: 580px;
+}
+
+h1,p{
+	color: rgba(255,255,255,1);
+}
+h1{
+	line-height: 2rem;
+}
+
 /* normalize.css 2012-02-07T12:37 UTC - https://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
