@@ -4,7 +4,7 @@
     width: -moz-fit-content;
     width: fit-content;
 }
-.sub-nav dd a, .sub-nav dd a:visited, .sub-nav dd a:active{
+.sub-nav .nav a, .sub-nav .nav a:visited, .sub-nav .nav a:active{
     color: #333;
     text-decoration: none;
     text-align: center;
@@ -12,12 +12,12 @@
     position: relative;
     background: none !important;
 }
-.sub-nav dd.active a{
+.sub-nav .nav .active a{
     color: #000;
     background: none;
     border-radius: 0;
 }
-dd {
+.nav {
 margin-bottom: 0;
 display:block;
 }
@@ -34,11 +34,6 @@ display:block;
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-}
-.sub-nav dd.active a:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
 }
 .navbar {
   position: fixed;
