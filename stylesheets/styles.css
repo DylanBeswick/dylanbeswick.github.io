@@ -17,6 +17,10 @@
     background: none;
     border-radius: 0;
 }
+dd {
+margin-bottom: 0;
+display:block;
+}
 .sub-nav dd a:before {
     content: "";
     position: absolute;
