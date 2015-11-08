@@ -1,3 +1,33 @@
+.sub-nav{
+    margin: 0 auto !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.sub-nav dd a, .sub-nav dd a:visited, .sub-nav dd a:active{
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    background: none !important;
+}
+.sub-nav dd.active a{
+    color: #000;
+    background: none;
+    border-radius: 0;
+}
+.navbar {
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding:0;
+}
+.navbar.fixed {
+    background: rgba(255, 255, 255, 0.9);
+}
+.navbar:not(.fixed) a, .magellan-nav:not(.fixed) a:visited {
+    color:aliceblue;
+} 
 @font-face {
   font-family: 'OpenSansLight';
   src: url("../fonts/OpenSans-Light-webfont.eot");
