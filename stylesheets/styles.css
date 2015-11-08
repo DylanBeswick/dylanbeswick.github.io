@@ -539,7 +539,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #e8e8e8;
+  color: #202020;
   margin: 0 0 10px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -562,7 +562,7 @@ h2 {
 }
 
 h4, h5, h6 {
-  color: #e8e8e8;
+  color: #4444ff;
 }
 
 h3 {
@@ -570,7 +570,7 @@ h3 {
   line-height: 24px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
-  color: #b6b6b6;
+  color: #555555;
 }
 
 a {
