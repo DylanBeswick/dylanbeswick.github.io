@@ -23,9 +23,9 @@
         if(siblings[i].dataset.background){
           perset[sumHeight] =  siblings[i].dataset.background;
         }
-        else
+        else {
           perset[sumHeight] =  0;
-      
+        }
         sumHeight= sumHeight + siblings[i].clientHeight;
       }
       processScroll();
