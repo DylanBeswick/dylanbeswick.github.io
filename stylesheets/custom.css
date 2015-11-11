@@ -138,14 +138,16 @@ h1{
 	font-family: 'Lato', serif;
 	font-size: 16px;
         position: relative;
-        transition: background-color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
         }
 .navlink a {
 	color:turquoise;
+	
 }
 .navlink a:hover {
           color: #454545; 
+          
 }
-.navlink .logonav {
+.navlink .logonav a{
 	font-family: 'Josefin Slab', serif;
 }
