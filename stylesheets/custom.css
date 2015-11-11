@@ -131,17 +131,17 @@ a small {
 h1{
 	line-height: 2rem;
 }
-.navlink {
+.navlink a {
 	padding: 5px;
 	margin: 10px 10px 10px 10px;
 	text-align: center;
 	font-family: 'Lato', serif;
 	font-size: 16px;
         position: relative;
-        transition: background-color 0.1s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
         }
 .navlink a {
-	color:#4077DD;
+	color:#454588;
 }
 .navlink a:hover {
           color: #454545; 
