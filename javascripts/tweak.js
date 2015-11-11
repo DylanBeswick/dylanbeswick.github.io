@@ -1,6 +1,6 @@
 $(".slide").each(function(i, obj) {
-    console.log(this)
-    var x = this
-    if ($('.' + this.class).height() < (window.innerHeight + 45)) {
-      $('.' + this.class).css("height", (window.innerHeight + 45).toString().concat('px'))
+    console.log(obj)
+    var x = obj
+    if ($('.' + obj.class).height() < (window.innerHeight + 45)) {
+      $('.' + obj.class).css("height", (window.innerHeight + 45).toString().concat('px'))
     }});
