@@ -110,6 +110,9 @@ a small {
 	display: table-cell;
 	vertical-align: middle;
 	margin:0 auto;
+	display: table;
+	height: 100%;
+	width: 100%;
 }
 .playground {
 	line-height: 100px;
