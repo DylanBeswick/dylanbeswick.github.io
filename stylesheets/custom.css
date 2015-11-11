@@ -62,6 +62,7 @@ a {
 }
 a:hover {
   color: #77aaf0;
+  text-decoration: underline;
 }
 
 a small {
@@ -146,7 +147,8 @@ h1{
 	
 }
 .navlink a:hover {
-          color: #8181F7; 
+	text-decoration: none;
+        color: #8181F7; 
           
 }
 .navlink .logonav a{
