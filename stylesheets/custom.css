@@ -141,8 +141,11 @@ h1{
         transition: background-color 0.3s ease-in-out;
         }
 .navlink a {
-	color:#354599;
+	color:turquoise;
 }
 .navlink a:hover {
           color: #454545; 
+}
+#front {
+	font-family: 'Josefin Slab', serif;
 }
