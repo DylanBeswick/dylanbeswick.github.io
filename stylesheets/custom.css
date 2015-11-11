@@ -58,7 +58,7 @@ a {
   color: #bbbbbb;
   font-weight: 400;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 a:hover {
   color: #77aaf0;
