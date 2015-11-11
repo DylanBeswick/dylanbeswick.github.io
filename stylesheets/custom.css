@@ -16,6 +16,9 @@ table {
 	width: 1000px;
 	margin-left: auto;
     	margin-right: auto;
+    	position: absolute;
+    	left: 0;
+    	right: 0;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #202020;
