@@ -1,5 +1,5 @@
-$(".slide").each(function(i) {
-    console.log(this)
-    if (this.height() < (window.innerHeight + 45)) {
-      this.css("height", (window.innerHeight + 45).toString().concat('px'))
+$(".slide").each(function(i, obj) {
+    console.log(obj)
+    if (obj.height() < (window.innerHeight + 45)) {
+      obj.css("height", (window.innerHeight + 45).toString().concat('px'))
     }});
