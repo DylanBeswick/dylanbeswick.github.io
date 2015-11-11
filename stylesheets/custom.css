@@ -123,9 +123,7 @@ a small {
 .projects-table {
  	border-top: 1px solid #434343;
  	width: 1000px;
-	margin-left: auto;
-    	margin-right: auto;
-    	position: absolute;
+    	left:300px;
 }
 
 p {
