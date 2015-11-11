@@ -11,12 +11,16 @@ $(function() {
 	});
 });
 $(document).ready(function(){
-var cl = -1
+var x = 0
 for (x in $(".slide")) {
-    cl = '.' + $(".slide")[x].classList[1].toString
+	try {
+    cl = '.' + $(".slide")[x].classList[1].toString();
     if ($(cl).height() < (window.innerHeight + 45)) {
-      $(cl).css("height", (window.innerHeight + 45).toString().concat('px'))
-    }};
+      $(cl).css("height", (window.innerHeight + 45).toString().concat('px'));
+    }
+    }
+	catch(i) {}
+};
 
       var wHeight = $(window).innerHeight();
       var siblings = $('.slide').siblings();
