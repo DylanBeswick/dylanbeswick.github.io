@@ -12,7 +12,7 @@ table p {
 	margin-bottom: 5px;
 }
 table {
-	border-top: 5px solid #999999;
+	border-top: 1px solid gray;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #202020;
