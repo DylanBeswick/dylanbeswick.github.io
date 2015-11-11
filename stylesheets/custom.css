@@ -146,6 +146,6 @@ h1{
 .navlink a:hover {
           color: #454545; 
 }
-.logonav {
+.navlink .logonav {
 	font-family: 'Josefin Slab', serif;
 }
