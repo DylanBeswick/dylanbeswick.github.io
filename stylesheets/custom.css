@@ -69,22 +69,6 @@ a small {
   margin-top: -0.6em;
   display: block;
 }
-.navlink {
-	padding: 5px;
-	margin: 10px 10px 10px 10px;
-	text-align: center;
-	font-family: 'Lato', serif;
-	font-size: 16px;
-        position: relative;
-        transition: background-color 0.1s ease-in-out;
-        }
-.navlink p {
-	color:#000000;
-}
-.navlink p:hover {
-          color: #454545; 
-	
-}
 .sub-nav {
     margin: 0 auto !important;
     width: -webkit-fit-content;
@@ -146,4 +130,19 @@ a small {
 
 h1{
 	line-height: 2rem;
+}
+.navlink {
+	padding: 5px;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+	font-family: 'Lato', serif;
+	font-size: 16px;
+        position: relative;
+        transition: background-color 0.1s ease-in-out;
+        }
+.navlink a {
+	color:#000000;
+}
+.navlink a:hover {
+          color: #454545; 
 }
