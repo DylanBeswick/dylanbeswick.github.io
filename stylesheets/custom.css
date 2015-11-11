@@ -120,6 +120,15 @@ a small {
 .playground p {
 	line-height: 25px;
 }
+.projects-table {
+ 	border-top: 1px solid #434343;
+ 	width: 1000px;
+	margin-left: auto;
+    	margin-right: auto;
+    	position: absolute;
+    	left: 0;
+    	right: 0;
+}
 
 p {
 	color: rgba(255,255,255,1);
