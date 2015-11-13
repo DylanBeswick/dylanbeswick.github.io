@@ -134,13 +134,12 @@ h1{
 	line-height: 2rem;
 }
 .navlink a {
-	padding: 5px;
-	margin: 10px 10px 10px 10px;
-	text-align: center;
-	font-family: 'Lato', serif;
-	font-size: 16px;
-        position: relative;
-        transition: color 0.3s ease-in-out;
+    padding: 15px;
+    padding-bottom: 18px;
+    text-align: center;
+    font-family: 'Lato', serif;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
         }
 .navlink a {
 	color:turquoise;
