@@ -59,6 +59,7 @@ a {
   font-weight: 400;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+  outline: 0;
 }
 a:hover {
   color: #77aaf0;
