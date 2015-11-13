@@ -72,6 +72,7 @@ a small {
   display: block;
 }
 .sub-nav {
+		height: 38px;
     margin: 0 auto !important;
     width: -webkit-fit-content;
     width: -moz-fit-content;
