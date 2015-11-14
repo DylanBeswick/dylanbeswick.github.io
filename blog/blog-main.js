@@ -5,9 +5,10 @@ for (x in blog[0]) {
 };
 
 }
+$(document).ready(function(){
 $.ajax({
-     async: false,
      type: 'GET',
      url: 'https://dylan5797.github.io/blog/blogdata.json',
      success: callback
+});
 });
