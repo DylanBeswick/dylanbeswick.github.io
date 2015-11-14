@@ -52,6 +52,8 @@ h3 {
 a {
   color: #bbbbbb;
   font-weight: 400;
+  padding-bottom:1px;
+  border-bottom: 1px solid;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
   outline: 0;
@@ -134,7 +136,6 @@ h1{
         }
 .navlink a {
 	color:turquoise;
-	padding-bottom:1px;
 	border-bottom: 0px;
 	
 }
