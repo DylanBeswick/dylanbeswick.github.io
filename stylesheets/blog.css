@@ -153,6 +153,12 @@ a:hover {
 .blog-link {
 	font-size:30px;
 }
+.blogitem {
+	text-align:left;
+}
+.blogitem p {
+	padding-left: 15px;
+}
 a {
 	outline: 0;
 	text-decoration: none;
