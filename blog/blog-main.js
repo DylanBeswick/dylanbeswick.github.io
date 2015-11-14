@@ -1,6 +1,5 @@
 function callback(data) {
-  var blog = JSON.parse(data)
-blog = blog["blog"]
+ var blog = data["blog"]
 for (x in blog[0]) {
   $('.playground').append('<p>' + blog[0][x]["postName"] + '</p>')
 };
