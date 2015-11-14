@@ -113,12 +113,12 @@ a small {
 }
 .blogtitle {
     font-size: 75px;
-    padding-top: 25px;
+    padding-top: 35px;
+    margin-top: 5px;
     margin-bottom: 25px;
     width: 100%;
-    background-color: #FE9A2E;
-    border-bottom: 2px solid rgba(60, 170, 255, 0.5);
-    padding-bottom: 35px;
+    background-color: #2EFEF7;
+    padding-bottom: 45px;
 }
 
 .playground p {
