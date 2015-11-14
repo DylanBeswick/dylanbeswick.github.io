@@ -29,7 +29,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-color: #000000
+	font-color: #000000;
   font-size: 28px;
 }
 
@@ -102,6 +102,7 @@ a small {
 	display: table-cell;
 	vertical-align: middle;
 	margin:0 auto;
+	text-align: center;
 }
 .playground {
 	padding-top:75px;
@@ -115,7 +116,9 @@ a small {
     margin-bottom:25px;
     width:100%;
     border-bottom: 2px solid rgba(255,255,255,1);
+    padding-bottom: 35px;
 }
+
 .playground p {
 	line-height: 25px;
 }
