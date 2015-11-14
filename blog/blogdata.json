@@ -1,10 +1,10 @@
 {
-  "blog":[
+  "blog": [
     [
       {
-        "postName":"Initial Post",
-        "content":"<p>Test</p>",
-        "timestamp":"201511141046",
+        "postName": "Initial Post",
+        "content": "<p>Test</p>",
+        "timestamp": "201511141046"
       }
       ]
     ]
