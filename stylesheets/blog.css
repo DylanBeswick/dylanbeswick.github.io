@@ -135,7 +135,7 @@ h1{
 .navlink a {
 	color:turquoise;
 	padding-bottom:1px;
-	border-bottom: 1px solid;
+	border-bottom: 0px;
 	
 }
 .navlink a:hover {
