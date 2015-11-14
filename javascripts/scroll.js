@@ -23,7 +23,7 @@ for (x in $(".slide")) {
 };
 
       var wHeight = $(window).innerHeight();
-      var siblings = $('.slide').siblings();
+      var siblings = $('.slide');
       var perset = {};
       var sumHeight = 0;
       for(var i = 0; i<siblings.length; i++) {
