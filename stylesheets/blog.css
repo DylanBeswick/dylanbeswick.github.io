@@ -58,7 +58,6 @@ a {
 }
 a:hover {
   color: #77aaf0;
-  text-decoration: underline;
 }
 
 a small {
@@ -135,6 +134,8 @@ h1{
         }
 .navlink a {
 	color:turquoise;
+	padding-bottom:1px;
+	border-bottom: 1px solid;
 	
 }
 .navlink a:hover {
@@ -147,4 +148,5 @@ h1{
 }
 a {
 	outline: 0;
+	text-decoration: none;
 }
