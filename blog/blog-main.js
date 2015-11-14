@@ -1,7 +1,7 @@
 function callback(data) {
  var blog = data["blog"]
 for (x in blog[0]) {
-  $('.playground').append('<p>' + blog[0][x]["postName"] + '</p>')
+  $('.playground').append('<a class="blog-link">' + blog[0][x]["postName"] + '</a>')
 };
 
 }
