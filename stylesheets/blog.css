@@ -151,7 +151,7 @@ a:hover {
 	font-family: 'Josefin Slab', serif;
 }
 .blog-link {
-	padding:3px;
+	font-size:30px;
 }
 a {
 	outline: 0;
