@@ -150,6 +150,10 @@ a:hover {
 .navlink .logonav a{
 	font-family: 'Josefin Slab', serif;
 }
+.blog-link {
+	font-size:30px;
+	padding:3px;
+}
 a {
 	outline: 0;
 	text-decoration: none;
