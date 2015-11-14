@@ -4,7 +4,7 @@ function callback(data) {
  month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 for (x in blog[0]) {
  ts = blog[0][x]["timestamp"]
-  $('.playground').append('<li class="' + ts + '"></li>'); 
+  $('.playground').append('<li class="' + ts + ' blogitem"></li>'); 
   $('.' + ts).append('<a class="blog-link">' + blog[0][x]["postName"] + '</a>');
   $('.' + ts).append('<p>' + month[ts.slice(4, 6) - 1] + '. ' + ts.slice(6,8))
 };
