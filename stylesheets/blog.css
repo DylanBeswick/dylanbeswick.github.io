@@ -107,9 +107,14 @@ a small {
 	margin:0 auto;
 }
 .playground {
+	margin-top:75px;
 	margin: 0 auto;
 	text-align: center;
 	width: 580px;
+}
+h1.blogtitle {
+    font-size: 75px;
+    margin-bottom:25px;
 }
 .playground p {
 	line-height: 25px;
