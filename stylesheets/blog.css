@@ -1,0 +1,152 @@
+body {
+  padding: 0px 0 20px 0px;
+  margin: 0px;
+  font-family: 'Raleway', serif;
+  color: #f0e7d5;
+  font-weight: normal;
+  background-color: #EFEFEF
+  background-attachment: fixed;
+}
+p {
+	color: #000000;
+}
+table p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.projects-table {
+	border-top: 1px solid #434343;
+	width: 1000px;
+	
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight: normal;
+}
+
+p, ul, ol, table, pre, dl {
+  margin: 0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
+h1 {
+	font-color: #000000
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h4, h5, h6 {
+  color: #000000;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  color: #000000;
+}
+
+a {
+  color: #bbbbbb;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  outline: 0;
+}
+a:hover {
+  color: #77aaf0;
+  text-decoration: underline;
+}
+
+a small {
+  font-size: 11px;
+  color: #666;
+  margin-top: -0.6em;
+  display: block;
+}
+.sub-nav {
+		height: 38px;
+    margin: 0 auto !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-top: 12px;
+}
+.sub-nav .nav a, .sub-nav .nav a:visited, .sub-nav .nav a:active {
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    background: none !important;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 70, 70, 0.9);
+}
+.slide{
+	border-bottom: 2px solid rgba(255,255,255,1);
+}
+
+.main-container{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.container-wrap{
+	display: table-cell;
+	vertical-align: middle;
+	margin:0 auto;
+}
+.playground {
+	margin: 0 auto;
+	text-align: center;
+	width: 580px;
+}
+.playground p {
+	line-height: 25px;
+}
+.larger-playground {
+	margin: 0 auto;
+	text-align: center;
+	width: 1100px;
+}
+
+h1{
+	line-height: 2rem;
+}
+.navlink a {
+    padding: 15px;
+    padding-bottom: 18px;
+    text-align: center;
+    font-family: 'Lato', serif;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+        }
+.navlink a {
+	color:turquoise;
+	
+}
+.navlink a:hover {
+	text-decoration: none;
+        color: #8181F7; 
+          
+}
+.navlink .logonav a{
+	font-family: 'Josefin Slab', serif;
+}
+a {
+	outline: 0;
+}
