@@ -1,3 +1,4 @@
+// blog-main.js Show blog posts on main page. 
 function callback(data) {
  var blog = data["blog"];
  var ts;
