@@ -163,6 +163,6 @@ a:hover {
 	padding-left: 15px;
 }
 a {
-	outline: 0;
+	outline: none;
 	text-decoration: none;
 }
