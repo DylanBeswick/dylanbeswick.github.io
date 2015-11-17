@@ -2,13 +2,9 @@ from array import array as _array
 import time as _time
 import hashlib as _hashlib
 try:
-    import pip
-except:
-    print('PIP Can\'t run in handled console')
-try:
     import pyaudio as _pyaudio
 except:
-    pip.main(['install', 'PyAudio'])
+    print('Microphone disabled. Can\'t use unless installed with pip')
 import math as _math
 import random as _random
 import traceback as _traceback
