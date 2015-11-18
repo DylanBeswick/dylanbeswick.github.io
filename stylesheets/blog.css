@@ -159,9 +159,6 @@ a:hover {
 .blogitem {
 	text-align:left;
 }
-.blogitem p {
-	padding-left: 15px;
-}
 a {
 	outline: none;
 	text-decoration: none;
