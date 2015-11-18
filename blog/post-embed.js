@@ -7,12 +7,11 @@ function getParameterByName(name) {
 function callback(data) {
 var blog = data
  var ts;
- month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-  $('.playground').append('<div class="blog-main style="width:100%"></div>'); 
-  $('.blog-main').append('<h1 class="blog-title">' + blog["title"] + '</h1>');
-  ts = blog['timestamp']
-  $('.blog-main').append('<p style="margin-bottom:25px; color:#555555">' + month[ts.slice(4, 6) - 1] + '. ' + ts.slice(6,8))
-  $('.blog-main').append(blog['content'])
+ month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; 
+  $('.playground').append('<h1 class="blog-title">' + blog["title"] + '</h1>');
+  ts = blog['timestamp'];
+  $('.playground').append('<p style="margin-bottom:25px; color:#555555">' + month[ts.slice(4, 6) - 1] + '. ' + ts.slice(6,8));
+  $('.playground').append(blog['content']);
 }
 $(document).ready(function(){
 $.ajax({
