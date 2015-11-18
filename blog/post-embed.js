@@ -3,7 +3,7 @@ function getParameterByName(name) {
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
- 
+} 
 function callback(data) {
 var blog = data
  var ts;
@@ -13,7 +13,6 @@ var blog = data
   ts = blog['timestamp']
   $('.blog-main').append('<p style="margin-bottom:25px; color:#555555">' + month[ts.slice(4, 6) - 1] + '. ' + ts.slice(6,8))
   $('.blog-main').append(blog['content'])
-
 }
 $(document).ready(function(){
 $.ajax({
