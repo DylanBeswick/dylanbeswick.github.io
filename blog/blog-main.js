@@ -1,8 +1,8 @@
 // blog-main.js Show blog posts on main page. 
 function callback(data) {
- var blog = data["blog"];
+ var blog = JSON.parse(data)["blog"];
  var ts;
- month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+ var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 for (x in blog) {
  ts = blog[x]["timestamp"]
   $('.playground').append('<li class="' + ts + ' blogitem"></li>'); 
