@@ -16,7 +16,7 @@ var blog = data
 $(document).ready(function(){
 $.ajax({
      type: 'GET',
-     url: 'https://dylan5797.github.io/blog/posts/' + getParameterByName("p") + '.json',
+     url: 'https://raw.githubusercontent.com/Dylan5797/dylan5797.github.io/master/blog/posts/' + getParameterByName("p") + '.json',
      success: callback
 });
 });
