@@ -68,7 +68,9 @@ a:hover {
   color: #77aaf0;
   text-decoration: underline;
 }
-
+code {
+	color:#222222;
+}
 a small {
   font-size: 11px;
   color: #666;
