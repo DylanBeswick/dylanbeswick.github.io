@@ -5,7 +5,7 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 } 
 function callback(data) {
-var blog = data
+var blog = JSON.parse(data);
  var ts;
  month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; 
   $('.playground').append('<h1 class="blog-title">' + blog["title"] + '</h1>');
