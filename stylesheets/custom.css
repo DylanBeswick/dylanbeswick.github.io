@@ -156,8 +156,10 @@ h1{
     color: turquoise;
     background: rgba(100, 70, 70, 0.5);
 }
-.logonav a {
-	font-family: 'Josefin Slab', serif;
+.navlink.logonav a {
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+    padding-bottom: 17px;
 }
 a {
 	outline: none;
