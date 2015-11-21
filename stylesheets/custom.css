@@ -147,18 +147,17 @@ h1{
     text-align: center;
     font-family: 'Lato', serif;
     font-size: 16px;
-    transition: color 0.3s ease-in-out;
-        }
-.navlink a {
-	color:turquoise;
-	
+    transition: background 0.3s ease-in-out;
+    background: rgba(200, 70, 70, 0);
+    color:turquoise;
 }
 .navlink a:hover {
-	text-decoration: none;
-        color: #8181F7; 
+    color: turquoise;
+    background: rgba(100, 70, 70, 0.5);
+}
           
 }
-.navlink .logonav a{
+.navlink .logonav a {
 	font-family: 'Josefin Slab', serif;
 }
 a {
