@@ -14,7 +14,7 @@ var blog = JSON.parse(data);
   $('.playground').append(blog['content']);
   $('.blog-title').css('padding-bottom', "5px");
   $('.blog-title').css('font-size', "40px");
-  $('.blog-title').css('font-family', "Lato, serif");
+  $('.blog-title').css('font-family', "Raleway, serif");
 }
 $(document).ready(function(){
 $.ajax({
