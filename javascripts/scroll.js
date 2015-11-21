@@ -63,7 +63,7 @@ for (x in $(".slide")) {
         if(bgColor) {
         	if (bgColor.substring(0, 4) == "http") {
 	        	try {
-	        		$('body').css('background-color', '');
+	        		$('body').css('background-color', '#888888');
 	        	}
 	        	catch(e) {console.log('err');}
 	        	$("body").css('background-image', "url(" + bgColor + ")");
