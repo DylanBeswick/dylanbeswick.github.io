@@ -152,6 +152,7 @@ h1{
     color:turquoise;
 }
 .navlink a:hover {
+    text-decoration: none;
     color: turquoise;
     background: rgba(100, 70, 70, 0.5);
 }
