@@ -11,6 +11,7 @@ var blog = JSON.parse(data);
   $('.title-wrap').append('<h1 class="blog-title">' + blog["title"] + '</h1>');
   ts = blog['timestamp'];
   $('.title-wrap').append('<p style="margin-bottom:25px; color:#555555">' + month[ts.slice(4, 6) - 1] + '. ' + ts.slice(6,8));
+  $('.playground').css('text-align', 'left');
   $('.playground').append(blog['content']);
   $('.blog-title').css('padding-bottom', "5px");
   $('.blog-title').css('font-size', "40px");
