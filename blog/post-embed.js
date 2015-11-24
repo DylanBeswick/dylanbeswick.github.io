@@ -9,6 +9,7 @@ var blog = JSON.parse(data);
  var ts;
  month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   $('.loader-icon').remove()
+  $('body').css('background-color', '#F5F5FF')
   $('.title-wrap').css('text-align', 'center');
   $('.title-wrap').append('<h1 class="blog-title">' + blog["title"] + '</h1>');
   ts = blog['timestamp'];
@@ -20,6 +21,7 @@ var blog = JSON.parse(data);
   $('.blog-title').css('font-family', "Raleway, serif");
 }
 $(document).ready(function(){
+    $('body').css('background-color', '#FFFFFF')
 $.ajax({
      type: 'GET',
      url: 'https://raw.githubusercontent.com/Dylan5797/dylan5797.github.io/master/blog/posts/' + getParameterByName("p") + '.json',
