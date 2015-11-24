@@ -7,7 +7,8 @@ function getParameterByName(name) {
 function callback(data) {
 var blog = JSON.parse(data);
  var ts;
- month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; 
+ month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  $('.loader-icon').remove()
   $('.title-wrap').css('text-align', 'center');
   $('.title-wrap').append('<h1 class="blog-title">' + blog["title"] + '</h1>');
   ts = blog['timestamp'];
