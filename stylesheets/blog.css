@@ -159,10 +159,14 @@ a:hover {
 li {
 	padding-bottom: 15px;
 	color:#000000;
+	list-style: circle;
 }
 .blogitem {
 	padding-bottom: 0px;
 	text-align:left;
+}
+.blogitem li {
+	list-style: none;
 }
 a {
 	outline: none;
