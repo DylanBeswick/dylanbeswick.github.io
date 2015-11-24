@@ -156,14 +156,15 @@ a:hover {
 .blog-link {
 	font-size:30px;
 }
+li {
+	padding-bottom: 15px;
+	color:#000000;
+}
 .blogitem {
+	padding-bottom: 0px;
 	text-align:left;
 }
 a {
 	outline: none;
 	text-decoration: none;
-}
-li {
-	padding-bottom: 15px;
-	color:#000000;
 }
