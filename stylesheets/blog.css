@@ -163,3 +163,6 @@ a {
 	outline: none;
 	text-decoration: none;
 }
+li p {
+	color:#000000;
+}
