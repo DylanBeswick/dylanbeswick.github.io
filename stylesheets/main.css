@@ -122,6 +122,9 @@ li {
 .blogitem {
 	list-style: none;
 }
+.navlink a {
+	border-bottom: none;
+}
 a {
 	outline: none;
 	text-decoration: none;
