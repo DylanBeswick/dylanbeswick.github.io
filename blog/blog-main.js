@@ -29,7 +29,7 @@ for (var c in p) {
     m.height = (Math.abs(Math.sin((i + c / 15) / 10 + p[c]) * 100) + 1).toString() + "px"
 }
 }
-var intr = setInterval(frame, 20)
+intr = setInterval(frame, 20)
 $.ajax({
      type: 'GET',
      url: 'https://raw.githubusercontent.com/Dylan5797/dylan5797.github.io/master/blog/blogdata.json',
