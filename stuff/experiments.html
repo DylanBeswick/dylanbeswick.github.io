@@ -26,31 +26,13 @@
 		<div class="container-wrap">
 			<div class="playground">
 				<h1>Dylan Beswick's JS Experiments</h1>
-				<div class="container" style="height:110px; width:500px; background-color:#F5F5FF">
-					<div class="bar bar1" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar2" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar3" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar4" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar5" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar6" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar7" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar8" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar9" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar10" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar11" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar12" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar13" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar14" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar15" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar16" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar17" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar18" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar19" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar20" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar21" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar22" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
-					<div class="bar bar23" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
+				<div class="bars-container" style="height:110px; width:500px; background-color:#F5F5FF">
 					<script>
+						var q = 1
+						while (q > 30) {
+							$('bars-container').append('<div class="bar bar' + q + '" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>')
+							q++
+						}
 						var i = 0
 						var p = []
 						var x = 0
