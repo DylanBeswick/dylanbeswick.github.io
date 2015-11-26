@@ -25,7 +25,7 @@
 	<div class="main-container">
 		<div class="container-wrap">
 			<div class="playground">
-				<div class="container" style="height:110px; width:165px; background-color:#FFDDAA">
+				<div class="container" style="height:110px; width:165px; background-color:#EFEFFF">
 				<div class="bar bar1" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
 				<div class="bar bar2" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
 				<div class="bar bar3" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>
@@ -46,10 +46,10 @@
 					i++
 					for (var c in p) {
 					    var m = document.getElementsByClassName("bar" + (parseInt(c, 10) + 1))[0].style
-					    m.height = (Math.abs(Math.sin(i / 20 + p[c]) * 100) + 1).toString() + "px"
+					    m.height = (Math.abs(Math.sin((i + c / 15) / 10 + p[c]) * 100) + 1).toString() + "px"
 					}
 					}
-					setInterval(frame, 25)
+					setInterval(frame, 20)
 				</script>
 			</div>
 			</div>
