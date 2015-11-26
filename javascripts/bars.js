@@ -1,6 +1,6 @@
 
 var q = 1
-while (q < 25) {
+while (q < 32) {
 	$('.bars-container').append('<div class="bar bar' + q + '" style="width:15px; background-color:#09DD99; float:left; margin-left: 5px"></div>')
 	q++
 }
