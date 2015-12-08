@@ -1,24 +1,5 @@
-@font-face {
-    font-family: "Roboto";
-    src: url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,greek);
-}
-
-@font-face {
-    font-family: "Josefin Slab";
-    src: url(https://fonts.googleapis.com/css?family=Josefin+Slab);
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url(https://fonts.googleapis.com/css?family=Lato);
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url(https://fonts.googleapis.com/css?family=Raleway);
-}
-
-@font-face {
-    font-family: "Questrial";
-    src: url(https://fonts.googleapis.com/css?family=Questrial);
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,greek);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
