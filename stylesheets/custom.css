@@ -90,8 +90,8 @@ a small {
 .sub-nav {
 	height: 38px;
 	margin: 0 auto !important;
-	width: 100%
-	padding-top: 12px;
+	width: 100%;
+	padding-top: 12px
 }
 
 .sub-nav .nav a, .sub-nav .nav a:visited, .sub-nav .nav a:active {
