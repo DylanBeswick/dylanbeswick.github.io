@@ -84,11 +84,3 @@
 	font-size: 18px;
 	padding-bottom: 17px;
 }
-
-a {
-	outline: none;
-}
-
-a, a:active, a:focus {
-	outline: none
-}
