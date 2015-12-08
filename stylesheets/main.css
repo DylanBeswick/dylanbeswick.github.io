@@ -1,28 +1,4 @@
-@font-face {
-    font-family: "Roboto";
-    src: url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,greek);
-}
-
-@font-face {
-    font-family: "Josefin Slab";
-    src: url(https://fonts.googleapis.com/css?family=Josefin+Slab);
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url(https://fonts.googleapis.com/css?family=Lato);
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url(https://fonts.googleapis.com/css?family=Raleway);
-}
-
-@font-face {
-    font-family: "Questrial";
-    src: url(https://fonts.googleapis.com/css?family=Questrial);
-}
-
+@import url(https://dylanbeswick.github.io/stylesheets/fonts.css);
 body {
 	padding: 0px 0 20px 0px;
 	margin: 0px;
