@@ -1,4 +1,4 @@
-@import(https://dylanbeswick.github.io/stylesheets/fonts.css)
+@import url(https://dylanbeswick.github.io/stylesheets/fonts.css)
 .sub-nav {
 	height: 38px;
 	margin: 0 auto !important;
