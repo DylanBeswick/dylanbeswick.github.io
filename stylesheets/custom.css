@@ -90,7 +90,7 @@ a small {
 .sub-nav {
 	height: 38px;
 	margin: 0 auto !important;
-	width: 100%;
+	display: table;
 	padding-top: 12px
 }
 
@@ -108,7 +108,6 @@ a small {
 	top: 0;
 	left: 0;
 	z-index: 9999;
-	display: table;
 	width: 100%;
 	height: 50px;
 	background: rgba(255, 70, 70, 0.9);
