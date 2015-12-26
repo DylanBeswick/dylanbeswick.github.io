@@ -8,7 +8,7 @@ function callback(data) {
 for (x in blog) {
  ts = blog[x]["timestamp"]
   $('.playground').append('<li class="' + ts + ' blogitem"></li>'); 
-  $('.' + ts).append('<a href="https://dylanbeswick.github.io/blog/post?p=' + ts + '" class="blog-link">' + blog[x]["postName"] + '</a>');
+  $('.' + ts).append('<a href="https://dylanbeswick.github.io/writing/post?p=' + ts + '" class="blog-link">' + blog[x]["postName"] + '</a>');
   $('.' + ts).append('<p>' + month[ts.slice(4, 6) - 1] + '. ' + ts.slice(6,8))
 };
 
