@@ -11,7 +11,7 @@ if (window.location.pathname != '/') {
             <span class="navlink"><a href="https://dylanbeswick.github.io/#codingprojects">Coding Projects</a></span>
             <span class="navlink"><a href="https://dylanbeswick.github.io/#scratch">Scratch</a></span>
             <span class="navlink"><a href="https://dylanbeswick.github.io/#piano">Piano</a></span>
-            <span class="navlink"><a href="https://dylanbeswick.github.io/blog">Blog</a></span>
+            <span class="navlink"><a href="https://dylanbeswick.github.io/writing">Writing</a></span>
         </dl>
     </div>`)
 })
