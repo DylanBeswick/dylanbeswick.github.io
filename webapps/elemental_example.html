@@ -1,0 +1,283 @@
+<html>
+  <head>
+    <title>Elemental Userpage Mockup Example</title>
+  </head>
+  <body>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,300);
+      /* general styles */
+      
+      body {
+      	background-color: #fff;
+      	font-family: Raleway;
+      }
+      
+      img {
+      	border-radius: 8px;
+      }
+      
+      a {
+      	text-decoration: none;
+      	transition: color 0.25s ease-in-out;
+      }
+      
+      a:hover {
+      	color: #0075e0;
+      	text-decoration: underline;
+      }
+      
+      
+      /* basic boxes */
+      
+      .userpage-row {
+      	border-radius: 5px;
+      	width: 750px;
+      	height: 220px;
+      	margin-top: 40px;
+      	padding-top: 1px;
+      }
+      
+      .userpage-box {
+      	background-color: #fff;
+      	border-radius: 15px;
+      	width: 750px;
+      	margin-top: 40px;
+      }
+      
+      .userpage-upper {
+      	border-top-left-radius: 15px;
+      	border-top-right-radius: 15px;
+      	padding-left: 25px;
+      	padding-right: 25px;
+      	height: 80px;
+      }
+      
+      .userpage-about {
+      	display: inline-flex;
+      	padding-left: 30px;
+      	padding-right: 30px;
+      	height: 350px;
+      	width: 310px;
+      }
+      
+      
+      /* specific tags within classes */
+      
+      .userpage-upper h2 {
+      	display: inline-block;
+      	font-size: 1.8em;
+      }
+      
+      .userpage-upper div {
+      	display: inline-block;
+      	font-size: 1.3em;
+      }
+      
+      .userpage-about-me .userpage-inner-head div {
+      	word-wrap: break-word;
+      	width: 100%;
+      	height: 95%;
+      	overflow: auto
+      }
+      
+      .userpage-about-me {
+      	border-right: 1px solid #DFDFDF;
+      }
+      
+      .userpage-featured img {
+      	width: 310px
+      }
+      
+      .userpage-row div {
+      	margin-top: -22px;
+      	overflow-x: auto;
+      	overflow-y: hidden;
+      }
+      
+      .userpage-row h3 {
+      	margin-left: 30px;
+      }
+      
+      .userpage-row img {
+      	border: 1px solid rgba(0,0,0,0.2);
+      	height: 120px;
+      	width: 160px;
+      }
+      
+      .userpage-row ul {
+      	overflow: auto
+      }
+      
+      .userpage-row ul li {
+      	display: inline-block;
+      	margin-left: -14px;
+      	margin-right: 31px;
+      }
+      
+      .userpage-following-section-carousel img {
+      	width:120px;
+      	height:120px;
+      }
+      /* re-usable styles */
+      
+      .centered {
+      	margin-left: auto;
+      	margin-right: auto;
+      }
+      
+      .shadow {
+      	box-shadow: 0 0 30px #888;
+      }
+      
+      .dark-shadow {
+      	box-shadow: 0 0 5px #000;
+      }
+      
+      .seafoam {
+      	background-color: #42BA92;
+      }
+      
+      .white {
+      	color: #fff;
+      }
+    </style>
+    <div class="userpage-box shadow centered">
+    	<div class="userpage-upper seafoam">
+    		<h2 class="userpage-username white"></h2>
+    		<div style="float:right; margin-top:27px"></div>
+    	</div>
+    	<div class="userpage-about-me userpage-about">
+    		<div class="userpage-inner-head">
+    			<h3>About Me</h3>
+    			<div></div>
+    		</div>
+    	</div>
+    	<div class="userpage-featured userpage-about">
+    		<div class="userpage-inner-head">
+    			<h3>Featured Creation</h3>
+    			<img>
+    			<p></p>
+    		</div>
+    	</div>
+    </div>
+    <div class="userpage-row userpage-box shadow centered">
+    	<h3>Shared creations</h3>
+    	<div>
+    		<ul class="userpage-shared-section-carousel">
+    		</ul>
+    	</div>
+    </div>
+    <div class="userpage-row userpage-box shadow centered">
+    	<h3>Favorite Creations</h3>
+    	<div>
+    		<ul class="userpage-favorite-section-carousel">
+    		</ul>
+    	</div>
+    </div>
+    <div class="userpage-row userpage-box shadow centered">
+    	<h3>Following</h3>
+    	<div>
+    		<ul class="userpage-following-section-carousel">
+    		</ul>
+    	</div>
+    </div>
+    <script>
+      // ElementalCode UserPage
+      // Main Data
+      Elemental = new Object();
+      Elemental.UserPage = new Object();
+      Elemental.UserPage.User = new Object();
+      Elemental.UserPage.User.UserName = "Dylan";
+      Elemental.UserPage.User.CLASS = "Elemental Team";
+      Elemental.UserPage.FEATURED_PROJECT_ID = 0;
+      Elemental.UserPage.BIO = "Hi! I'm Dylan. I help develop the frontend of Elemental. I help design the site! I know many programming languages, like Python, JS, HTML, CSS, and Scratch. And of course Elemental! ";
+      Elemental.UserPage.User.Favorites = [1, 2, 3, 4, 5];
+      Elemental.UserPage.USER_FAVORITE_COUNT = Elemental.UserPage.User.Favorites.length;
+      Elemental.UserPage.User.Projects = [1, 2];
+      Elemental.UserPage.USER_PROJECT_COUNT = Elemental.UserPage.User.Projects.length;
+      Elemental.UserPage.User.Following = ["Bob", "Account", "Dylan", "Person", "Gah", "Alpha"];
+      Elemental.UserPage.USER_FOLLOWING_COUNT = Elemental.UserPage.User.Following.length;
+      
+      function get_first(name) {
+      	return document.getElementsByClassName(name)[0];
+      }
+      
+      function model_to_dom(obj) {
+      	var p = document.createElement('li')
+      	var a = document.createElement('a')
+      	var i = document.createElement('img')
+      	var t = document.createElement('a')
+      	var x = document.createElement('br')
+      	a.href = obj['url']
+      	i.src = obj['icon']
+      	a.appendChild(i)
+      	p.appendChild(a)
+      	t.innerHTML = obj['name']
+      	t.href = obj['url']
+      	p.appendChild(x)
+      	p.appendChild(t)
+      	return p
+      }
+      
+      function get_project_model(id) {
+      	try {
+      		hello
+      	} catch(e) {
+      		var obj = {
+      			name: "Project",
+      			icon: "https://dylan5797.github.io/internalpx/perm/embed/elemental/project_base_icon.png",
+      			url: "https://elementalcode.herokuapp.com/projects/" + id
+      		}
+      	}
+      	return model_to_dom(obj)
+      }
+      
+      function get_user_model(username) {
+      	try {
+      		hello
+      	} catch (e) {
+      		var obj = {
+      			name: username,
+      			icon: "http://dylan5797.github.io/internalpx/perm/embed/elemental/user-icons-static/" + username.slice(0, 1).toLowerCase() + ".png",
+      			url: "https://elementalcode.herokuapp.com/user/" + username
+      		}
+      	}
+      	return model_to_dom(obj)
+      }
+      
+      function set_width(object, count, emptymessage, imgsize) {
+      	if (count > 4) {
+      		object.style.width = ((imgsize + 20) * count) + "px";
+      	} else if (count > 0) {
+      		object.style.width = "710px";
+      	} else {
+      		object.parentNode.innerHTML = "<div style='background-color:#C7E1D9;width:700px;height:100px;padding-top:50px;margin:auto;margin-top:20px;border-radius:20px;text-align:center;'>" + emptymessage + "</div>";
+      	}
+      }
+      
+      function fill_carousel(object, data, func) {
+      	if (data.length > 0) {
+      		for (x in data) {
+      			object.appendChild(func(data[x]))
+      		}
+      	}
+      }
+      
+      // Get Carousels
+      var project_carousel = get_first("userpage-shared-section-carousel");
+      var favorite_carousel = get_first("userpage-favorite-section-carousel");
+      var following_carousel = get_first("userpage-following-section-carousel");
+      
+      // Main Content Modifiers
+      set_width(project_carousel, Elemental.UserPage.USER_PROJECT_COUNT, "", 160)
+      set_width(favorite_carousel, Elemental.UserPage.USER_FAVORITE_COUNT, "", 160)
+      set_width(following_carousel, Elemental.UserPage.USER_FOLLOWING_COUNT, "", 120)
+      fill_carousel(project_carousel, Elemental.UserPage.User.Projects, get_project_model)
+      fill_carousel(favorite_carousel, Elemental.UserPage.User.Favorites, get_project_model)
+      fill_carousel(following_carousel, Elemental.UserPage.User.Following, get_user_model)
+      get_first('userpage-upper').children[0].innerHTML = Elemental.UserPage.User.UserName;
+      get_first('userpage-upper').children[1].innerHTML = Elemental.UserPage.User.CLASS;
+      get_first('userpage-about-me').children[0].children[1].innerHTML = Elemental.UserPage.BIO;
+    </script>
+  </body>
+</html>
