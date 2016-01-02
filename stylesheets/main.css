@@ -16,6 +16,9 @@ table p {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+table {
+	border-top: 1px solid #434343;	
+}
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 10px;
@@ -61,14 +64,14 @@ a {
 	outline: 0;
 }
 a:hover {
-  color: #0075e0;
+	color: #0075e0;
 }
 
 a small {
-  font-size: 11px;
-  color: #666;
-  margin-top: -0.6em;
-  display: block;
+	font-size: 11px;
+	color: #666;
+	margin-top: -0.6em;
+	display: block;
 }
 
 .blog-container{
@@ -89,14 +92,14 @@ a small {
 	width: 580px;
 }
 .blogtitle {
-    font-family: 'Questrial', sans-serif;
-    font-size: 75px;
-    padding-top: 35px;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    width: 100%;
-    background-color: #2EFEF7;
-    padding-bottom: 45px;
+	font-family: 'Questrial', sans-serif;
+	font-size: 75px;
+	padding-top: 35px;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	width: 100%;
+	background-color: #2EFEF7;
+	padding-bottom: 45px;
 }
 
 .playground p {
