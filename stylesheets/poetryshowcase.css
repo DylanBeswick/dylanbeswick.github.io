@@ -8,9 +8,6 @@ body {
 }
 
 img {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
 	border-radius: 8px;
 }
 
@@ -112,4 +109,26 @@ a:hover {
 	margin-top: 10px;
 	margin-left: 45px;
 	border-left: 2px solid #7799FF;
+}
+
+.copyleft {
+	background-image: url(https://cloud.githubusercontent.com/assets/13187260/12074970/a02d3bae-b12d-11e5-9cd7-31a45fe3b4ba.png);
+	background-size: 14px 14px;
+	margin-top: 2px;
+	width: 14px;
+	height: 14px;
+	margin-right: 4px;
+	padding: 0px;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
