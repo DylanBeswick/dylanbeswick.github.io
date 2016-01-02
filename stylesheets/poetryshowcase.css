@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,300);
+
+/* general styles */
+
+body {
+	background-color: #fff;
+	font-family: Raleway;
+}
+
+img {
+	border-radius: 8px;
+}
+
+a {
+	color: #0075e0;
+	text-decoration: none;
+	transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+	color: #005599;
+	text-decoration: underline;
+}
+
+
+/* basic boxes */
+
+.box {
+	background-color: #fff;
+	margin-top: 40px;
+}
+
+.upper {
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 80px;
+}
+
+
+/* specific tags within classes */
+
+.upper h2 {
+	display: inline-block;
+	font-size: 1.8em;
+}
+
+
+/* re-usable styles */
+
+.standard {
+	width: 750px;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.shadow {
+	box-shadow: 0 0 30px #888;
+}
+
+.dark-shadow {
+	box-shadow: 0 0 5px #000;
+}
+
+.poly {
+	background-image: url(https://cloud.githubusercontent.com/assets/13187260/11023528/84dba7f2-8638-11e5-9ef1-b2bb0271f925.jpg);
+}
+
+.white {
+	color: #fff;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.round-top {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.round-bottom {
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.round {
+	border-radius: 15px;
+}
+
+.light-padding {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.bottom-padding {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
+
+.block {
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 45px;
+	border-left: 2px solid #7799FF;
+}
