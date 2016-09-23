@@ -1,22 +1,15 @@
-#!python3
 from array import array as _array
 import time as _time
 import hashlib as _hashlib
+try:
+    import pyaudio as _pyaudio
+except:
+    print('Microphone disabled. Can\'t use unless installed with pip')
 import math as _math
 import random as _random
 import traceback as _traceback
 import os as _os
 _clear = lambda: _os.system('cls')
-
-modules = ['pyaudio']
-for x in modules:
-    try:
-        __import__(x)
-    except:
-        print('Error: package not found. Installing...')
-        import pip
-        pip.main(['install', x])
-    globals()['_' + x] = __import__(x)
 def _proc_seed(seed):
     modifiers = list(str(int(seed))) 
     OLD = seed
@@ -45,7 +38,6 @@ def random_mic():
     p = _pyaudio.PyAudio()
     stream = p.open(format=_pyaudio.paInt16, channels=1, rate=44100, input=True, output=True, frames_per_buffer=8)
     sd = sum(_array('h', stream.read(16)).tolist())
-    stream.close()
     return _proc_seed(abs(sd))
 def random_py():
     return _proc_seed(_random.uniform(1, 100))
