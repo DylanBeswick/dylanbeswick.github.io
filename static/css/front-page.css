@@ -56,9 +56,9 @@ a, a:active, a:focus {
 }
 
 .front-basetext {
-    position: absolute;
-    bottom: 10px;
+	position: absolute;
     left: 45px;
+	top: 0px;
 }
 
 .front-basetext h1 {
